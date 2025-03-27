@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator layout</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+    <form>
+        <input type="text" id="first" placeholder="Enter First Number"><br><br>
+
+        <select id="operation">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select><br><br>
+        <input type="text" id="second" placeholder="Enter Second Number"><br><br>
+
+        <button type="button" onclick="Calculation()">Submit</button>
+    </form>
+
+    <div id="result"></div>
+</div>
+
+
+    <script>
+
+
+
+        function Calculation() 
+        {
+            let first = parseFloat(document.getElementById('first').value);
+            let second = parseFloat(document.getElementById('second').value);
+            let operation = document.getElementById('operation').value;
+            let result;
+
+            switch (operation)
+             {
+                case '+':
+                    result = first + second;
+                    break;
+                case '-':
+                    result = first - second;
+                    break;
+                case '*':
+                    result = first * second;
+                    break;
+                case '/':
+                    result = first / second;
+                    break;
+                default:
+                    result = 'NONE';
+            }
+
+            document.getElementById('result').innerText ='' + result;
+        }
+    </script>
+</body>
+
+</html>

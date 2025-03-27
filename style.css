@@ -1,0 +1,23 @@
+.container{
+    margin: auto;
+    text-align: center;
+    background-color: lightgreen;
+    height: 250px;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px grey;
+}
+input{
+    margin-top: 15px;
+    padding: 5px;
+}
+select{
+    padding: 0 5px;
+}
+
+button{
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: darksalmon;
+    color: #fff;
+}
