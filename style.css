@@ -2,7 +2,7 @@
     margin: auto;
     text-align: center;
     background-color: lightgreen;
-    height: 250px;
+    height: 280px;
     width: 300px;
     border-radius: 20px;
     box-shadow: 10px 10px 10px grey;
@@ -21,3 +21,4 @@ button{
     background-color: darksalmon;
     color: #fff;
 }
+
