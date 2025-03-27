@@ -20,6 +20,7 @@
             <option value="-">-</option>
             <option value="*">*</option>
             <option value="/">/</option>
+            <option value="%">%</option>
         </select><br><br>
         <input type="text" id="second" placeholder="Enter Second Number"><br><br>
 
@@ -40,6 +41,7 @@
             let second = parseFloat(document.getElementById('second').value);
             let operation = document.getElementById('operation').value;
             let result;
+            
 
             switch (operation)
              {
@@ -55,11 +57,14 @@
                 case '/':
                     result = first / second;
                     break;
+                    case '%':
+                    result = first % second;
+                    break;    
                 default:
                     result = 'NONE';
             }
 
-            document.getElementById('result').innerText ='' + result;
+            document.getElementById('result').innerText ='' + result.toFixed(3);
         }
     </script>
 </body>
